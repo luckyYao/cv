@@ -9,6 +9,6 @@ cd cv/src/html
 ```
 change `index.html`.
 
-# How to publich
+# How to publish
 * Create a new repository.
 * setting -> options -> GitHub Pages -> Source -> Master Branch
