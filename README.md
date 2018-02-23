@@ -1,9 +1,9 @@
 # CV
-This is a responsive web cv template.click [here](https://missssi.github.io/cv/) to see.
+This is a responsive web cv template.click [here](https://yaoxiaojuan.github.io/cv/) to see.
 
 # How to use
 ```
-git clone https://github.com/missssi/cv.git
+git clone https://github.com/yaoxiaojuan/cv.git
 
 cd cv/src/html
 ```
