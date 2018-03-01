@@ -31,7 +31,7 @@ const opts = {
   distHtml: './',
 
   watchFiles: ['src/html/*.html', 'src/scss/*.scss', 'src/js/*.js', 'src/img/*.*'],
-  watchTasks: ['js', 'sass', 'img', 'html'],
+  watchTasks: ['js', 'sass', 'html'],
 };
 
 gulp.task('connect', () => {
