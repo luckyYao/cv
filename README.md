@@ -12,3 +12,7 @@ change `index.html`.
 # How to publish
 * Create a new repository.
 * setting -> options -> GitHub Pages -> Source -> Master Branch
+
+# TODO
+- handle gulp error
+- set print style

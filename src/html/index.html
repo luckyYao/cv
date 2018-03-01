@@ -5,7 +5,9 @@
   <title>要笑娟的简历</title>
   <link rel="icon" href="./dist/img/favicon-cv.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./dist/css/screen.css" media="screen">
   <link rel="stylesheet" href="./dist/css/index.css">
+  <link rel="stylesheet" href="./dist/css/print.css" media="print">
 </head>
 <body>
 <section class="cv" id="cv">
@@ -100,14 +102,14 @@
         <span class="cell">工业大数据</span>
         <p class="cell">基于Vue.js的团队协作项目。二次开发并维护开源组件iView，从而使团队开发效率提升数倍。</p>
       </div>
-      <div class="row">
+      <div class="row print-hidden">
         <span class="cell">私有云</span>
         <p class="cell">基于React.js的团队协作项目。开发包括组织架构图在内的复杂组件，样式攻坚，保证设计完美实现。</p>
       </div>
-<!--       <div class="row">
+      <div class="row print-hidden">
         <span class="cell">公有云</span>
         <p class="cell">基于React.js独立开发公有云代理系统客户端，并提前一周完成开发任务。</p>
-      </div> -->
+      </div>
       <h3 class="row content__title2">
         <span class="cell font--color-main">Sep 2013-Sep 2016</span>
         <span class="cell">大学生创业</span>
@@ -124,7 +126,7 @@
         <span class="cell">CMS</span>
         <p class="cell">网站解决方案，轻便易用。带领5人学生团队，基于此技术设计并开发10套左右官网。</p>
       </div>
-      <div class="row">
+      <div class="row print-hidden">
         <span class="cell">宅人桥</span>
         <p class="cell">商业新闻发布平台，移动优先的web应用，兼容至IE6及低端移动设备。</p>
       </div>
@@ -143,8 +145,8 @@
         <a target="view_window" href="" class="cell"></a>
         <p class="cell text-right font--size-small">
           <a target="view_window" href="http://misssi.net">了解更多？请移步Blog</a>
-          <span class="font--color-main">&nbsp;or&nbsp;</span>
-          <a target="view_window" href="./前端_要笑娟_18230273602.pdf">下载简历</a>
+          <span class="font--color-main print-hidden">&nbsp;or&nbsp;</span>
+          <a class="print-hidden" target="view_window" href="./前端_要笑娟_18230273602.pdf">下载简历</a>
         </p>
       </div>
     </div>
