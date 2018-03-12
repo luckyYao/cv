@@ -48,6 +48,10 @@ $directions: ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right');
     }
   }
 }
+.m-b-80 {
+  margin-bottom: 80px;
+}
+
 .font-thin {
   font-weight: 100;
 }
@@ -56,12 +60,6 @@ $directions: ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right');
 }
 .text-right {
   text-align: right;
-}
-.padding--bottom-20 {
-  padding-bottom: 20px;
-}
-.margin--bottom-80 {
-  margin-bottom: 80px;
 }
 .font--size-small {
   font-size: 12px;
@@ -80,17 +78,15 @@ $directions: ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right');
     top: 0;
     bottom: 0;
     left: 0;
-    width: 250px;
+    width: 210px;
     border-right: 1px solid #eee;
-    //background: $main-color;
-    //color: #fff;
     padding: 20px;
     box-sizing: border-box;
     overflow: scroll;
     padding-bottom: 80px;
   }
   .content {
-    padding: 45px 20px 40px 270px;
+    padding: 45px 20px 40px 230px;
     height: 100%;
     overflow-y: scroll;
   }
@@ -98,13 +94,11 @@ $directions: ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right');
 
 .info--line {
   border-left: 1px solid #fff;
-  padding-left: 15px;
 }
 .info__title {
   position: relative;
   padding: 10px 10px 10px 0;
   font-size: 16px;
-  //background: $main-color;
   display: inline-block;
   &:before {
     content: '';
