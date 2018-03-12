@@ -36,6 +36,7 @@ const opts = {
 
 gulp.task('connect', () => {
   connect.server({
+    port: 8001,
     livereload: true,
   });
 });

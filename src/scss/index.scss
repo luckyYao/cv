@@ -29,6 +29,25 @@ body {
   color: #000;
   letter-spacing: 0.4px;
 }
+// margin and padding.
+// example: .m-b-5 and .p-b-5
+$dimensions: ('m': 'margin','p': 'padding');
+$directions: ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right');
+
+// Iterating over dimensions
+@each $dim in $dimensions {
+  // $dim is ('m' 'margin')
+  // Iterating over directions
+  @each $dir in $directions {
+    // $dir is ('b' 'bottom')
+    @for $i from 1 through 5 {
+      $size: $i * 5;
+      .#{nth($dim, 1)}-#{nth($dir, 1)}-#{$size} {
+        #{nth($dim, 2)}-#{nth($dir, 2)}: #{$size}px;
+      }
+    }
+  }
+}
 .font-thin {
   font-weight: 100;
 }
@@ -62,15 +81,16 @@ body {
     bottom: 0;
     left: 0;
     width: 250px;
-    background: $main-color;
-    color: #fff;
+    border-right: 1px solid #eee;
+    //background: $main-color;
+    //color: #fff;
     padding: 20px;
     box-sizing: border-box;
     overflow: scroll;
     padding-bottom: 80px;
   }
   .content {
-    padding: 45px 40px 40px 290px;
+    padding: 45px 20px 40px 270px;
     height: 100%;
     overflow-y: scroll;
   }
@@ -84,7 +104,7 @@ body {
   position: relative;
   padding: 10px 10px 10px 0;
   font-size: 16px;
-  background: $main-color;
+  //background: $main-color;
   display: inline-block;
   &:before {
     content: '';
@@ -126,14 +146,14 @@ body {
 }
 .info__connect a {
   display: block;
-  color: #fff;
+  color: $main-color;
 }
 
 .progress {
   width: 90%;
   height: 5px;
   border-radius: 5px;
-  background: #fff;
+  background: $main-color;
   position: relative;
   margin: 5px 0 10px;
   .progress__dragbar {
@@ -172,7 +192,7 @@ body {
 
 .content__title {
   font-weight: 500;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #eee;
   font-size: 18px;
   line-height: 2;
   padding-left: 10px;
