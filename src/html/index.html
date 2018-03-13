@@ -5,11 +5,14 @@
   <title>要笑娟的简历</title>
   <link rel="icon" href="./dist/img/favicon-cv.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./dist/css/screen.css" media="screen">
   <link rel="stylesheet" href="./dist/css/index.css">
+  <link rel="stylesheet" href="./dist/css/screen.css" media="screen">
   <link rel="stylesheet" href="./dist/css/print.css" media="print">
 </head>
 <body>
+<div class="git no-print">
+  <a class="git__logo" href="https://github.com/yaoxiaojuan/cv" target="_blank"></a>
+</div>
 <section class="cv" id="cv">
   <div class="info">
     <div class="info__basic">
@@ -59,6 +62,7 @@
     <div class="info--line">
       <h2 class="info__title">THANK YOU</h2>
     </div>
+    <img src="src/img/qrcode.png" class="qrcode no-screen" alt="电子版简历二维码">
   </div>
   <div class="content font--size-small">
     <h2 class="content__title">工作经验</h2>
@@ -88,7 +92,7 @@
         <span class="cell">私有云(React)</span>
         <ul class="cell">
           <li class="m-b-5">引入并定制Antd组件，释放团队开发压力。</li>
-          <li class="m-b-5">纯CSS实现复杂的组织架构图组件，并被多处复用。</li>
+          <li class="m-b-5">纯CSS实现复杂的组织架构树组件，并被多处复用。</li>
           <li class="m-b-5">使用Controller控制组件方法的开发思想，并用Promise解决异步加载数据问题，使React组件简洁易用。</li>
         </ul>
       </div>
@@ -106,13 +110,13 @@
       <div class="row">
         <span class="cell">拾光</span>
         <ul class="cell">
-          <li class="m-b-5">基于自主研发的校园钉钉通知服务，开发的包括投票，教务，活动，图书馆等应用在内的小应用平台（web & Android & IOS）。</li>
+          <li class="m-b-5">基于自主研发的校园钉钉通知服务，开发的包括投票，教务，活动，图书馆等应用在内的校园应用平台（web & Android & IOS）。</li>
           <li class="m-b-5">使用原生JS及CSS开发活动，及教务相关系列应用（移动端）。</li>
           <li class="m-b-5">使用React.js开发投票，图书漂流等应用（移动端）。</li>
           <li class="m-b-5">使用iframe解决用户登录的跨域问题。</li>
         </ul>
       </div>
-      <div class="row no-print">
+      <div class="row">
         <a href="http://mall.chinalove99.net/" class="cell">聚爱城</a>
         <ul class="cell">
           <li class="m-b-5">婚恋用品网上商城（移动商城，运营中）。</li>
@@ -137,18 +141,30 @@
     <h2 class="content__title">个人项目</h2>
     <div class="table">
       <div class="row">
-        <a target="view_window" href="http://misssi.net/" class="cell">Wordpress主题</a>
-        <p class="cell">一款简洁易用的响应式Wordpress主题。</p>
+        <a target="view_window" href="https://github.com/yaoxiaojuan/workflow" class="cell">Workflow-Gulp</a>
+        <ul class="cell">
+          <li class="m-b-5">根据自己需求配置整理的gulp工作流，包括服务，热加载，静态资源压缩，编译（sass & es6），单元测试等功能。</li>
+        </ul>
       </div>
       <div class="row">
-        <a target="view_window" href="https://github.com/yaoxiaojuan/protector" class="cell">Protect守护者</a>
+        <a target="view_window" href="https://github.com/yaoxiaojuan/cv" class="cell">Web-CV</a>
+        <p class="cell">
+          自主设计开发的电子版简历，响应式，支持定制及下载PDF格式简历。
+        </p>
+      </div>
+      <div class="row no-print">
+        <a target="view_window" href="http://misssi.net/" class="cell">Wordpress主题</a>
+        <p class="cell">自主设计开发的一款简洁易用的响应式Wordpress主题。</p>
+      </div>
+      <div class="row no-print">
+        <a target="view_window" href="https://yaoxiaojuan.github.io/protector" class="cell">Protect守护者</a>
         <p class="cell">基于Vue.js的移动优先的web应用，用于帮助抑郁症患者及其家人系统地认识及科学应对抑郁症。</p>
       </div>
       <!-- <div class="row">
         <a target="view_window" href="" class="cell">完美弧线</a>
         <p class="cell">购物车抛物线效果，删除文件进垃圾桶效果都可以用这个小插件实现，轻便易用，按着文档操作，3分钟即可实现想要的效果。</p>
       </div> -->
-      <div class="row">
+      <div class="row no-print">
         <a target="view_window" href="https://yaoxiaojuan.github.io/MindMap/" class="cell">Tree</a>
         <p class="cell">
           纯CSS实现，支持无限级拓展的树型结构图，熟练应用BEM规范及sass。
@@ -158,7 +174,7 @@
               <a target="view_window" href="" class="cell">下雪的春节</a>
               <p class="cell">回忆中的最美的春节，在雪地里穿着新衣服，放鞭炮，打雪仗。</p>
             </div> -->
-      <div class="row">
+      <div class="row no-print">
         <span class="cell"></span>
         <a target="view_window" href="https://github.com/yaoxiaojuan" class="cell text-right font--size-small">更多项目，请移步Github</a>
       </div>
@@ -173,12 +189,18 @@
         <span class="cell">信息安全</span>
         <span class="cell" style="width: 100%">英语六级，国家励志奖学金，网页设计大赛二等奖，优秀毕业生。</span>
       </div>
-      <div class="row">
+      <div class="row no-print">
         <a target="view_window" href="" class="cell"></a>
         <p class="cell text-right font--size-small">
           <a target="view_window" href="http://misssi.net">了解更多？请移步Blog</a>
           <span class="font--color-main no-print">&nbsp;or&nbsp;</span>
           <a class="no-print" target="view_window" href="./前端_要笑娟_18230273602.pdf">下载简历</a>
+        </p>
+      </div>
+      <div class="row no-screen">
+        <a target="view_window" href="" class="cell"></a>
+        <p class="cell text-right font--size-small">
+          <a target="view_window" href="">了解更多？扫描左侧二维码</a>
         </p>
       </div>
     </div>

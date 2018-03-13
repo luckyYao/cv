@@ -80,13 +80,13 @@ $directions: ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right');
     left: 0;
     width: 210px;
     border-right: 1px solid #eee;
-    padding: 20px;
+    padding: 20px 20px 80px;
     box-sizing: border-box;
     overflow: scroll;
-    padding-bottom: 80px;
+    font-weight: 300;
   }
   .content {
-    padding: 45px 20px 40px 230px;
+    padding: 45px 23px 40px 233px;
     height: 100%;
     overflow-y: scroll;
   }
@@ -100,6 +100,7 @@ $directions: ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right');
   padding: 10px 10px 10px 0;
   font-size: 16px;
   display: inline-block;
+  font-weight: 300;
   &:before {
     content: '';
     width: 11px;
@@ -144,10 +145,11 @@ $directions: ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right');
 }
 
 .progress {
-  width: 90%;
+  width: 95%;
   height: 5px;
   border-radius: 5px;
   background: $main-color;
+  opacity: 0.8;
   position: relative;
   margin: 5px 0 10px;
   .progress__dragbar {
@@ -170,22 +172,18 @@ $directions: ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right');
   .cell {
     display: table-cell;
     padding-bottom: 20px;
+    font-weight: 300;
   }
   .cell:first-child {
     white-space: nowrap;
     padding-right: 15px;
     text-align: right;
-    font-weight: 500;
     min-width: 160px;
     font-size: 14px;
-  }
-  .cell:nth-child(2) {
-    font-weight: 300;
   }
 }
 
 .content__title {
-  font-weight: 500;
   border-bottom: 1px solid #eee;
   font-size: 18px;
   line-height: 2;
@@ -198,8 +196,5 @@ $directions: ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right');
   }
   .cell:nth-child(1) {
     font-size: 16px;
-  }
-  .cell:nth-child(2) {
-    font-weight: 500;
   }
 }
